@@ -28,6 +28,11 @@ body {
     padding: 10px;
 }
 
+.logo {
+    display: flex;
+    padding: 10px;
+}
+
 .header {
     background-color: green;
     grid-column: 2 / 4;
