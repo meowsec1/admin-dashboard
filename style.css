@@ -13,14 +13,25 @@ body {
     width: 1.6rem;
 }
 
+.big {
+    width: 3rem;
+}
+
 a {
     text-decoration: none;
     color: white;
+    display: flex;
+    align-items: center;
+}
+
+svg {
+    margin: 0 10px;
+    fill: currentColor
 }
 
 .container {
     display: grid;
-    grid-template-columns: 200px 3fr 1fr;
+    grid-template-columns: 300px 3fr 1fr;
     height: 100vh;
     grid-template-rows: auto auto 1fr;
 }
@@ -53,7 +64,9 @@ h2 {
 .logo, .logo h2 {
     display: flex;
     padding: 10px;
+    align-items: center;
     margin: 0;
+    font-size: 2rem;
 }
 
 
@@ -87,6 +100,10 @@ input:focus {
 .left {
     max-width: 600px;
     flex: 1;
+}
+
+.header h2 {
+    margin-bottom: 0;
 }
 
 input {
@@ -144,7 +161,6 @@ button {
 .card-icons {
     display: flex;
     justify-content: end;
-    gap: 10px;
 }
 
 .card h3 {
@@ -178,7 +194,7 @@ button {
 .content {
     background-color: white;
     padding: 25px;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     border-radius: 5px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
